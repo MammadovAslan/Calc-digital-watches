@@ -1,1 +1,1 @@
-# Calc-digital-watches
+# Calculator and Digital watches
