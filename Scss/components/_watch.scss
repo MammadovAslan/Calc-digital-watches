@@ -1,0 +1,20 @@
+#watch {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-family: digital;
+  font-size: 100px;
+  padding: 10px;
+  min-width: 300px;
+  color: rgb(28, 126, 28);
+  background: #111111;
+  box-shadow: 1px 1px 5px 4px grey inset;
+  text-shadow: 3px 3px 0px rgb(47, 224, 47);
+  @media (max-width: 536px) {
+    width: 100%;
+  }
+  @media (max-width: 336px) {
+    font-size: 70px;
+  }
+}
