@@ -2,6 +2,11 @@
   font-family: "Digital-7";
   src: local("Digital-7"), url("/fonts/digital-7.regular.ttf") format("truetype");
 }
+body {
+  background: rgb(246, 19, 126);
+  background: linear-gradient(90deg, rgb(246, 19, 126) 0%, rgb(185, 62, 139) 23%, rgb(204, 64, 180) 49%, rgb(175, 46, 172) 74%, rgb(32, 59, 65) 100%);
+}
+
 #calc {
   position: relative;
   font-family: "Digital-7";
@@ -15,6 +20,11 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   background: linear-gradient(to bottom, rgb(93, 99, 102) 18%, rgb(10, 14, 10) 54%, rgb(10, 8, 9) 100%);
+}
+@media (max-width: 336px) {
+  #calc {
+    margin-top: 0;
+  }
 }
 #calc #result,
 #calc button {
@@ -76,13 +86,14 @@
 
 #watch {
   position: absolute;
+  border-radius: 10px;
   bottom: 0;
   left: 0;
   text-align: center;
-  font-family: digital;
-  font-size: 100px;
+  font-family: "Digital-7";
+  font-size: 50px;
   padding: 10px;
-  min-width: 300px;
+  min-width: 200px;
   color: rgb(28, 126, 28);
   background: #111111;
   box-shadow: 1px 1px 5px 4px grey inset;
@@ -95,7 +106,7 @@
 }
 @media (max-width: 336px) {
   #watch {
-    font-size: 70px;
+    font-size: 50px;
   }
 }
 

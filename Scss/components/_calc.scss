@@ -1,4 +1,15 @@
 @import "../utils/variables";
+body {
+  background: rgb(246, 19, 126);
+  background: linear-gradient(
+    90deg,
+    rgba(246, 19, 126, 1) 0%,
+    rgba(185, 62, 139, 1) 23%,
+    rgba(204, 64, 180, 1) 49%,
+    rgba(175, 46, 172, 1) 74%,
+    rgba(32, 59, 65, 1) 100%
+  );
+}
 
 #calc {
   position: relative;
@@ -18,7 +29,9 @@
     rgba(10, 14, 10, 1) 54%,
     rgba(10, 8, 9, 1) 100%
   );
-
+  @media (max-width: 336px) {
+    margin-top: 0;
+  }
   #result,
   button {
     border: 3px solid rgba(255, 255, 255, 0.54);
