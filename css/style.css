@@ -1,6 +1,10 @@
+@font-face {
+  font-family: "Digital-7";
+  src: local("Digital-7"), url("/fonts/digital-7.regular.ttf") format("truetype");
+}
 #calc {
   position: relative;
-  font-family: digital;
+  font-family: "Digital-7";
   max-width: 430px;
   padding: 20px;
   margin: 100px auto;
@@ -96,6 +100,6 @@
 }
 
 @font-face {
-  font-family: digital;
-  src: url(/fonts/digital-7.regular.ttf);
+  font-family: "Digital-7";
+  src: local("Digital-7"), url("/fonts/digital-7.regular.ttf") format("truetype");
 }
